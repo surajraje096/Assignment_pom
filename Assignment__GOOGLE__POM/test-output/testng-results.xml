@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="48853" started-at="2020-04-04T23:13:51 IST" finished-at="2020-04-04T23:14:40 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="48853" started-at="2020-04-04T23:13:51 IST" finished-at="2020-04-04T23:14:40 IST">
+      <class name="Testcases.Google_01_PageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Testcases.Google_01_PageTest@3234e239]" name="setUp" is-config="true" duration-ms="23462" started-at="2020-04-04T23:13:51 IST" finished-at="2020-04-04T23:14:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifySearchBox()[pri:1, instance:Testcases.Google_01_PageTest@3234e239]" name="verifySearchBox" duration-ms="914" started-at="2020-04-04T23:14:15 IST" finished-at="2020-04-04T23:14:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchBox -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Testcases.Google_01_PageTest@3234e239]" name="tearDown" is-config="true" duration-ms="1327" started-at="2020-04-04T23:14:16 IST" finished-at="2020-04-04T23:14:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Testcases.Google_01_PageTest@3234e239]" name="setUp" is-config="true" duration-ms="11842" started-at="2020-04-04T23:14:17 IST" finished-at="2020-04-04T23:14:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifySearchbtn()[pri:2, instance:Testcases.Google_01_PageTest@3234e239]" name="verifySearchbtn" duration-ms="84" started-at="2020-04-04T23:14:29 IST" finished-at="2020-04-04T23:14:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchbtn -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Testcases.Google_01_PageTest@3234e239]" name="tearDown" is-config="true" duration-ms="782" started-at="2020-04-04T23:14:29 IST" finished-at="2020-04-04T23:14:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Testcases.Google_01_PageTest@3234e239]" name="setUp" is-config="true" duration-ms="9556" started-at="2020-04-04T23:14:30 IST" finished-at="2020-04-04T23:14:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifySearchluckybtn()[pri:3, instance:Testcases.Google_01_PageTest@3234e239]" name="verifySearchluckybtn" duration-ms="89" started-at="2020-04-04T23:14:39 IST" finished-at="2020-04-04T23:14:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchluckybtn -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Testcases.Google_01_PageTest@3234e239]" name="tearDown" is-config="true" duration-ms="724" started-at="2020-04-04T23:14:39 IST" finished-at="2020-04-04T23:14:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Testcases.Google_01_PageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

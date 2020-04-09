@@ -1,0 +1,1966 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/112</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Mar 17 20:54:14 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>5 seconds (5081 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Testcases.Google_03_SearchTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_03_SearchTest</td>
+<td><div><pre>org.testng.SkipException: testcase is skipped
+	at Testcases.Google_03_SearchTest.getTest(Google_03_SearchTest.java:40)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace637241618", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace637241618'><pre>org.testng.SkipException: testcase is skipped
+	at Testcases.Google_03_SearchTest.getTest(Google_03_SearchTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:613)
+	at org.testng.TestRunner.run(TestRunner.java:584)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>Testcases.Google_03_SearchTest@8646db9</td></tr>
+<tr>
+<td title='Testcases.Google_03_playTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_03_playTest</td>
+<td></td>
+<td>-1584458655</td>
+<td>Testcases.Google_03_playTest@37374a5e</td></tr>
+<tr>
+<td title='Testcases.Google_04_TranslateVerifyTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_04_TranslateVerifyTest</td>
+<td></td>
+<td>-1584458655</td>
+<td>Testcases.Google_04_TranslateVerifyTest@4671e53b</td></tr>
+<tr>
+<td title='Testcases.Google_03_NewsTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_03_NewsTest</td>
+<td></td>
+<td>-1584458655</td>
+<td>Testcases.Google_03_NewsTest@2db7a79b</td></tr>
+<tr>
+<td title='Testcases.Google_12_ReadEmailTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_12_ReadEmailTest</td>
+<td></td>
+<td>-1584458655</td>
+<td>Testcases.Google_12_ReadEmailTest@6950e31</td></tr>
+<tr>
+<td title='Testcases.Google_04_MapVerifyTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_04_MapVerifyTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_04_MapVerifyTest@b7dd107</td></tr>
+<tr>
+<td title='Testcases.Google_03_translateTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_03_translateTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_03_translateTest@42eca56e</td></tr>
+<tr>
+<td title='Testcases.Google_09_GmailAccountVerifyTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_09_GmailAccountVerifyTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_09_GmailAccountVerifyTest@52f759d7</td></tr>
+<tr>
+<td title='Testcases.Google_04_AccountVerifyTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_04_AccountVerifyTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_04_AccountVerifyTest@7cbd213e</td></tr>
+<tr>
+<td title='Testcases.Google_07_VerifySearchTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_07_VerifySearchTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_07_VerifySearchTest@192d3247</td></tr>
+<tr>
+<td title='Testcases.Google_19_GmailMovePageTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_19_GmailMovePageTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_19_GmailMovePageTest@3ecd23d9</td></tr>
+<tr>
+<td title='Testcases.Google_03_AccountPageTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_03_AccountPageTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_03_AccountPageTest@569cfc36</td></tr>
+<tr>
+<td title='Testcases.Google_03_SearchTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_03_SearchTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_03_SearchTest@8646db9</td></tr>
+<tr>
+<td title='Testcases.Google_04_GmailVerifyTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_04_GmailVerifyTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_04_GmailVerifyTest@43bd930a</td></tr>
+<tr>
+<td title='Testcases.Google_04_PlaystoreVerifyTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_04_PlaystoreVerifyTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_04_PlaystoreVerifyTest@33723e30</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_16_MailwithAttachmentTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_16_MailwithAttachmentTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_16_MailwithAttachmentTest@7a30d1e6</td></tr>
+<tr>
+<td title='Testcases.Google_15_GmailSearchTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_15_GmailSearchTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_15_GmailSearchTest@5891e32e</td></tr>
+<tr>
+<td title='Testcases.Google_20_GmailSignOutTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_20_GmailSignOutTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_20_GmailSignOutTest@cb0ed20</td></tr>
+<tr>
+<td title='Testcases.Google_06_Test.getTest()'><b>getTest</b><br>Test class: Testcases.Google_06_Test</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_06_Test@8e24743</td></tr>
+<tr>
+<td title='Testcases.Google_03_photosTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_03_photosTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_03_photosTest@74a10858</td></tr>
+<tr>
+<td title='Testcases.Google_04_DriveVerifyTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_04_DriveVerifyTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_04_DriveVerifyTest@23fe1d71</td></tr>
+<tr>
+<td title='Testcases.Google_04_SearchVerifyTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_04_SearchVerifyTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_04_SearchVerifyTest@28ac3dc3</td></tr>
+<tr>
+<td title='Testcases.Google_10Test.getTest()'><b>getTest</b><br>Test class: Testcases.Google_10Test</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_10Test@32eebfca</td></tr>
+<tr>
+<td title='Testcases.Google_03_MapsTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_03_MapsTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_03_MapsTest@4e718207</td></tr>
+<tr>
+<td title='Testcases.Google_04_PhotosVerifyTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_04_PhotosVerifyTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_04_PhotosVerifyTest@1d371b2d</td></tr>
+<tr>
+<td title='Testcases.Google_14_GmailsendmailTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_14_GmailsendmailTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_14_GmailsendmailTest@543c6f6d</td></tr>
+<tr>
+<td title='Testcases.Google_18_VerifyLabelTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_18_VerifyLabelTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_18_VerifyLabelTest@13eb8acf</td></tr>
+<tr>
+<td title='Testcases.Google_04_YoutubeVerifyTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_04_YoutubeVerifyTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_04_YoutubeVerifyTest@51c8530f</td></tr>
+<tr>
+<td title='Testcases.Google_13_GmailComposeVerifyTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_13_GmailComposeVerifyTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_13_GmailComposeVerifyTest@7403c468</td></tr>
+<tr>
+<td title='Testcases.Google_03_DriveTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_03_DriveTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_03_DriveTest@43738a82</td></tr>
+<tr>
+<td title='Testcases.Google_17_GoogleSettingVerifyTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_17_GoogleSettingVerifyTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_17_GoogleSettingVerifyTest@c81cdd1</td></tr>
+<tr>
+<td title='Testcases.Google_03_GmailTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_03_GmailTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_03_GmailTest@75881071</td></tr>
+<tr>
+<td title='Testcases.Google_04_NewsVerifyTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_04_NewsVerifyTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_04_NewsVerifyTest@2a70a3d8</td></tr>
+<tr>
+<td title='Testcases.Google_11_GmailStarTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_11_GmailStarTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_11_GmailStarTest@289d1c02</td></tr>
+<tr>
+<td title='Testcases.Google_03_YoutubeTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_03_YoutubeTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_03_YoutubeTest@22eeefeb</td></tr>
+<tr>
+<td title='Testcases.Google_05_HindiTest.getTest()'><b>getTest</b><br>Test class: Testcases.Google_05_HindiTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_05_HindiTest@17d0685f</td></tr>
+<tr>
+<td title='Testcases.Google_03_playTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_03_playTest</td>
+<td></td>
+<td>-1584458655</td>
+<td>Testcases.Google_03_playTest@37374a5e</td></tr>
+<tr>
+<td title='Testcases.Google_03_playTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_03_playTest</td>
+<td></td>
+<td>-1584458655</td>
+<td>Testcases.Google_03_playTest@37374a5e</td></tr>
+<tr>
+<td title='Testcases.Google_04_TranslateVerifyTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_04_TranslateVerifyTest</td>
+<td></td>
+<td>-1584458655</td>
+<td>Testcases.Google_04_TranslateVerifyTest@4671e53b</td></tr>
+<tr>
+<td title='Testcases.Google_04_TranslateVerifyTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_04_TranslateVerifyTest</td>
+<td></td>
+<td>-1584458655</td>
+<td>Testcases.Google_04_TranslateVerifyTest@4671e53b</td></tr>
+<tr>
+<td title='Testcases.Google_03_NewsTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_03_NewsTest</td>
+<td></td>
+<td>-1584458655</td>
+<td>Testcases.Google_03_NewsTest@2db7a79b</td></tr>
+<tr>
+<td title='Testcases.Google_03_NewsTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_03_NewsTest</td>
+<td></td>
+<td>-1584458655</td>
+<td>Testcases.Google_03_NewsTest@2db7a79b</td></tr>
+<tr>
+<td title='Testcases.Google_12_ReadEmailTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_12_ReadEmailTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_12_ReadEmailTest@6950e31</td></tr>
+<tr>
+<td title='Testcases.Google_12_ReadEmailTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_12_ReadEmailTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_12_ReadEmailTest@6950e31</td></tr>
+<tr>
+<td title='Testcases.Google_04_MapVerifyTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_04_MapVerifyTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_04_MapVerifyTest@b7dd107</td></tr>
+<tr>
+<td title='Testcases.Google_04_MapVerifyTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_04_MapVerifyTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_04_MapVerifyTest@b7dd107</td></tr>
+<tr>
+<td title='Testcases.Google_03_translateTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_03_translateTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_03_translateTest@42eca56e</td></tr>
+<tr>
+<td title='Testcases.Google_09_GmailAccountVerifyTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_09_GmailAccountVerifyTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_09_GmailAccountVerifyTest@52f759d7</td></tr>
+<tr>
+<td title='Testcases.Google_04_AccountVerifyTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_04_AccountVerifyTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_04_AccountVerifyTest@7cbd213e</td></tr>
+<tr>
+<td title='Testcases.Google_04_AccountVerifyTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_04_AccountVerifyTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_04_AccountVerifyTest@7cbd213e</td></tr>
+<tr>
+<td title='Testcases.Google_07_VerifySearchTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_07_VerifySearchTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_07_VerifySearchTest@192d3247</td></tr>
+<tr>
+<td title='Testcases.Google_19_GmailMovePageTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_19_GmailMovePageTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_19_GmailMovePageTest@3ecd23d9</td></tr>
+<tr>
+<td title='Testcases.Google_19_GmailMovePageTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_19_GmailMovePageTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_19_GmailMovePageTest@3ecd23d9</td></tr>
+<tr>
+<td title='Testcases.Google_03_AccountPageTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_03_AccountPageTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_03_AccountPageTest@569cfc36</td></tr>
+<tr>
+<td title='Testcases.Google_04_GmailVerifyTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_04_GmailVerifyTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_04_GmailVerifyTest@43bd930a</td></tr>
+<tr>
+<td title='Testcases.Google_04_GmailVerifyTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_04_GmailVerifyTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_04_GmailVerifyTest@43bd930a</td></tr>
+<tr>
+<td title='Testcases.Google_04_PlaystoreVerifyTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_04_PlaystoreVerifyTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_04_PlaystoreVerifyTest@33723e30</td></tr>
+<tr>
+<td title='Testcases.Google_04_PlaystoreVerifyTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_04_PlaystoreVerifyTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_04_PlaystoreVerifyTest@33723e30</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_16_MailwithAttachmentTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_16_MailwithAttachmentTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_16_MailwithAttachmentTest@7a30d1e6</td></tr>
+<tr>
+<td title='Testcases.Google_16_MailwithAttachmentTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_16_MailwithAttachmentTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_16_MailwithAttachmentTest@7a30d1e6</td></tr>
+<tr>
+<td title='Testcases.Google_15_GmailSearchTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_15_GmailSearchTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_15_GmailSearchTest@5891e32e</td></tr>
+<tr>
+<td title='Testcases.Google_15_GmailSearchTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_15_GmailSearchTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_15_GmailSearchTest@5891e32e</td></tr>
+<tr>
+<td title='Testcases.Google_20_GmailSignOutTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_20_GmailSignOutTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_20_GmailSignOutTest@cb0ed20</td></tr>
+<tr>
+<td title='Testcases.Google_20_GmailSignOutTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_20_GmailSignOutTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_20_GmailSignOutTest@cb0ed20</td></tr>
+<tr>
+<td title='Testcases.Google_06_Test.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_06_Test</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_06_Test@8e24743</td></tr>
+<tr>
+<td title='Testcases.Google_03_photosTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_03_photosTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_03_photosTest@74a10858</td></tr>
+<tr>
+<td title='Testcases.Google_03_photosTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_03_photosTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_03_photosTest@74a10858</td></tr>
+<tr>
+<td title='Testcases.Google_04_DriveVerifyTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_04_DriveVerifyTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_04_DriveVerifyTest@23fe1d71</td></tr>
+<tr>
+<td title='Testcases.Google_04_DriveVerifyTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_04_DriveVerifyTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_04_DriveVerifyTest@23fe1d71</td></tr>
+<tr>
+<td title='Testcases.Google_04_SearchVerifyTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_04_SearchVerifyTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_04_SearchVerifyTest@28ac3dc3</td></tr>
+<tr>
+<td title='Testcases.Google_04_SearchVerifyTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_04_SearchVerifyTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_04_SearchVerifyTest@28ac3dc3</td></tr>
+<tr>
+<td title='Testcases.Google_10Test.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_10Test</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_10Test@32eebfca</td></tr>
+<tr>
+<td title='Testcases.Google_10Test.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_10Test</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_10Test@32eebfca</td></tr>
+<tr>
+<td title='Testcases.Google_03_MapsTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_03_MapsTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_03_MapsTest@4e718207</td></tr>
+<tr>
+<td title='Testcases.Google_03_MapsTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_03_MapsTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_03_MapsTest@4e718207</td></tr>
+<tr>
+<td title='Testcases.Google_04_PhotosVerifyTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_04_PhotosVerifyTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_04_PhotosVerifyTest@1d371b2d</td></tr>
+<tr>
+<td title='Testcases.Google_04_PhotosVerifyTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_04_PhotosVerifyTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_04_PhotosVerifyTest@1d371b2d</td></tr>
+<tr>
+<td title='Testcases.Google_14_GmailsendmailTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_14_GmailsendmailTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_14_GmailsendmailTest@543c6f6d</td></tr>
+<tr>
+<td title='Testcases.Google_14_GmailsendmailTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_14_GmailsendmailTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_14_GmailsendmailTest@543c6f6d</td></tr>
+<tr>
+<td title='Testcases.Google_18_VerifyLabelTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_18_VerifyLabelTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_18_VerifyLabelTest@13eb8acf</td></tr>
+<tr>
+<td title='Testcases.Google_18_VerifyLabelTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_18_VerifyLabelTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_18_VerifyLabelTest@13eb8acf</td></tr>
+<tr>
+<td title='Testcases.Google_04_YoutubeVerifyTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_04_YoutubeVerifyTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_04_YoutubeVerifyTest@51c8530f</td></tr>
+<tr>
+<td title='Testcases.Google_04_YoutubeVerifyTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_04_YoutubeVerifyTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_04_YoutubeVerifyTest@51c8530f</td></tr>
+<tr>
+<td title='Testcases.Google_13_GmailComposeVerifyTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_13_GmailComposeVerifyTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_13_GmailComposeVerifyTest@7403c468</td></tr>
+<tr>
+<td title='Testcases.Google_13_GmailComposeVerifyTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_13_GmailComposeVerifyTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_13_GmailComposeVerifyTest@7403c468</td></tr>
+<tr>
+<td title='Testcases.Google_03_DriveTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_03_DriveTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_03_DriveTest@43738a82</td></tr>
+<tr>
+<td title='Testcases.Google_03_DriveTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_03_DriveTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_03_DriveTest@43738a82</td></tr>
+<tr>
+<td title='Testcases.Google_03_DriveTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_03_DriveTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_03_DriveTest@43738a82</td></tr>
+<tr>
+<td title='Testcases.Google_17_GoogleSettingVerifyTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_17_GoogleSettingVerifyTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_17_GoogleSettingVerifyTest@c81cdd1</td></tr>
+<tr>
+<td title='Testcases.Google_17_GoogleSettingVerifyTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_17_GoogleSettingVerifyTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_17_GoogleSettingVerifyTest@c81cdd1</td></tr>
+<tr>
+<td title='Testcases.Google_01_PageTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_01_PageTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_01_PageTest@1fc2b765</td></tr>
+<tr>
+<td title='Testcases.Google_01_PageTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_01_PageTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_01_PageTest@1fc2b765</td></tr>
+<tr>
+<td title='Testcases.Google_01_PageTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_01_PageTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_01_PageTest@1fc2b765</td></tr>
+<tr>
+<td title='Testcases.Google_03_GmailTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_03_GmailTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_03_GmailTest@75881071</td></tr>
+<tr>
+<td title='Testcases.Google_03_GmailTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_03_GmailTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_03_GmailTest@75881071</td></tr>
+<tr>
+<td title='Testcases.Google_04_NewsVerifyTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_04_NewsVerifyTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_04_NewsVerifyTest@2a70a3d8</td></tr>
+<tr>
+<td title='Testcases.Google_04_NewsVerifyTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_04_NewsVerifyTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_04_NewsVerifyTest@2a70a3d8</td></tr>
+<tr>
+<td title='Testcases.Google_11_GmailStarTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_11_GmailStarTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_11_GmailStarTest@289d1c02</td></tr>
+<tr>
+<td title='Testcases.Google_11_GmailStarTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_11_GmailStarTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_11_GmailStarTest@289d1c02</td></tr>
+<tr>
+<td title='Testcases.Google_03_YoutubeTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_03_YoutubeTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_03_YoutubeTest@22eeefeb</td></tr>
+<tr>
+<td title='Testcases.Google_03_YoutubeTest.setUp()'><b>setUp</b><br>Test class: Testcases.Google_03_YoutubeTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_03_YoutubeTest@22eeefeb</td></tr>
+<tr>
+<td title='Testcases.Google_05_HindiTest.setBrowser()'><b>setBrowser</b><br>Test class: Testcases.Google_05_HindiTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_05_HindiTest@17d0685f</td></tr>
+<tr>
+<td title='Testcases.Google_03_playTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_03_playTest</td>
+<td></td>
+<td>-1584458655</td>
+<td>Testcases.Google_03_playTest@37374a5e</td></tr>
+<tr>
+<td title='Testcases.Google_03_playTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_03_playTest</td>
+<td></td>
+<td>-1584458655</td>
+<td>Testcases.Google_03_playTest@37374a5e</td></tr>
+<tr>
+<td title='Testcases.Google_04_TranslateVerifyTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_04_TranslateVerifyTest</td>
+<td></td>
+<td>-1584458655</td>
+<td>Testcases.Google_04_TranslateVerifyTest@4671e53b</td></tr>
+<tr>
+<td title='Testcases.Google_04_TranslateVerifyTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_04_TranslateVerifyTest</td>
+<td></td>
+<td>-1584458655</td>
+<td>Testcases.Google_04_TranslateVerifyTest@4671e53b</td></tr>
+<tr>
+<td title='Testcases.Google_03_NewsTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_03_NewsTest</td>
+<td></td>
+<td>-1584458655</td>
+<td>Testcases.Google_03_NewsTest@2db7a79b</td></tr>
+<tr>
+<td title='Testcases.Google_03_NewsTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_03_NewsTest</td>
+<td></td>
+<td>-1584458655</td>
+<td>Testcases.Google_03_NewsTest@2db7a79b</td></tr>
+<tr>
+<td title='Testcases.Google_12_ReadEmailTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_12_ReadEmailTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_12_ReadEmailTest@6950e31</td></tr>
+<tr>
+<td title='Testcases.Google_12_ReadEmailTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_12_ReadEmailTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_12_ReadEmailTest@6950e31</td></tr>
+<tr>
+<td title='Testcases.Google_04_MapVerifyTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_04_MapVerifyTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_04_MapVerifyTest@b7dd107</td></tr>
+<tr>
+<td title='Testcases.Google_04_MapVerifyTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_04_MapVerifyTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_04_MapVerifyTest@b7dd107</td></tr>
+<tr>
+<td title='Testcases.Google_03_translateTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_03_translateTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_03_translateTest@42eca56e</td></tr>
+<tr>
+<td title='Testcases.Google_09_GmailAccountVerifyTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_09_GmailAccountVerifyTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_09_GmailAccountVerifyTest@52f759d7</td></tr>
+<tr>
+<td title='Testcases.Google_04_AccountVerifyTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_04_AccountVerifyTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_04_AccountVerifyTest@7cbd213e</td></tr>
+<tr>
+<td title='Testcases.Google_04_AccountVerifyTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_04_AccountVerifyTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_04_AccountVerifyTest@7cbd213e</td></tr>
+<tr>
+<td title='Testcases.Google_07_VerifySearchTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_07_VerifySearchTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_07_VerifySearchTest@192d3247</td></tr>
+<tr>
+<td title='Testcases.Google_19_GmailMovePageTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_19_GmailMovePageTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_19_GmailMovePageTest@3ecd23d9</td></tr>
+<tr>
+<td title='Testcases.Google_19_GmailMovePageTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_19_GmailMovePageTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_19_GmailMovePageTest@3ecd23d9</td></tr>
+<tr>
+<td title='Testcases.Google_03_AccountPageTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_03_AccountPageTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_03_AccountPageTest@569cfc36</td></tr>
+<tr>
+<td title='Testcases.Google_03_SearchTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_03_SearchTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_03_SearchTest@8646db9</td></tr>
+<tr>
+<td title='Testcases.Google_03_SearchTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_03_SearchTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_03_SearchTest@8646db9</td></tr>
+<tr>
+<td title='Testcases.Google_03_SearchTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_03_SearchTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_03_SearchTest@8646db9</td></tr>
+<tr>
+<td title='Testcases.Google_04_GmailVerifyTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_04_GmailVerifyTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_04_GmailVerifyTest@43bd930a</td></tr>
+<tr>
+<td title='Testcases.Google_04_GmailVerifyTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_04_GmailVerifyTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_04_GmailVerifyTest@43bd930a</td></tr>
+<tr>
+<td title='Testcases.Google_04_PlaystoreVerifyTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_04_PlaystoreVerifyTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_04_PlaystoreVerifyTest@33723e30</td></tr>
+<tr>
+<td title='Testcases.Google_04_PlaystoreVerifyTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_04_PlaystoreVerifyTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_04_PlaystoreVerifyTest@33723e30</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458656</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_16_MailwithAttachmentTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_16_MailwithAttachmentTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_16_MailwithAttachmentTest@7a30d1e6</td></tr>
+<tr>
+<td title='Testcases.Google_16_MailwithAttachmentTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_16_MailwithAttachmentTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_16_MailwithAttachmentTest@7a30d1e6</td></tr>
+<tr>
+<td title='Testcases.Google_15_GmailSearchTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_15_GmailSearchTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_15_GmailSearchTest@5891e32e</td></tr>
+<tr>
+<td title='Testcases.Google_15_GmailSearchTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_15_GmailSearchTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_15_GmailSearchTest@5891e32e</td></tr>
+<tr>
+<td title='Testcases.Google_20_GmailSignOutTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_20_GmailSignOutTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_20_GmailSignOutTest@cb0ed20</td></tr>
+<tr>
+<td title='Testcases.Google_20_GmailSignOutTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_20_GmailSignOutTest</td>
+<td></td>
+<td>-1584458657</td>
+<td>Testcases.Google_20_GmailSignOutTest@cb0ed20</td></tr>
+<tr>
+<td title='Testcases.Google_03_photosTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_03_photosTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_03_photosTest@74a10858</td></tr>
+<tr>
+<td title='Testcases.Google_03_photosTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_03_photosTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_03_photosTest@74a10858</td></tr>
+<tr>
+<td title='Testcases.Google_04_DriveVerifyTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_04_DriveVerifyTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_04_DriveVerifyTest@23fe1d71</td></tr>
+<tr>
+<td title='Testcases.Google_04_DriveVerifyTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_04_DriveVerifyTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_04_DriveVerifyTest@23fe1d71</td></tr>
+<tr>
+<td title='Testcases.Google_04_SearchVerifyTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_04_SearchVerifyTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_04_SearchVerifyTest@28ac3dc3</td></tr>
+<tr>
+<td title='Testcases.Google_04_SearchVerifyTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_04_SearchVerifyTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_04_SearchVerifyTest@28ac3dc3</td></tr>
+<tr>
+<td title='Testcases.Google_10Test.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_10Test</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_10Test@32eebfca</td></tr>
+<tr>
+<td title='Testcases.Google_10Test.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_10Test</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_10Test@32eebfca</td></tr>
+<tr>
+<td title='Testcases.Google_03_MapsTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_03_MapsTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_03_MapsTest@4e718207</td></tr>
+<tr>
+<td title='Testcases.Google_03_MapsTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_03_MapsTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_03_MapsTest@4e718207</td></tr>
+<tr>
+<td title='Testcases.Google_04_PhotosVerifyTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_04_PhotosVerifyTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_04_PhotosVerifyTest@1d371b2d</td></tr>
+<tr>
+<td title='Testcases.Google_04_PhotosVerifyTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_04_PhotosVerifyTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_04_PhotosVerifyTest@1d371b2d</td></tr>
+<tr>
+<td title='Testcases.Google_14_GmailsendmailTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_14_GmailsendmailTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_14_GmailsendmailTest@543c6f6d</td></tr>
+<tr>
+<td title='Testcases.Google_14_GmailsendmailTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_14_GmailsendmailTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_14_GmailsendmailTest@543c6f6d</td></tr>
+<tr>
+<td title='Testcases.Google_18_VerifyLabelTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_18_VerifyLabelTest</td>
+<td></td>
+<td>-1584458658</td>
+<td>Testcases.Google_18_VerifyLabelTest@13eb8acf</td></tr>
+<tr>
+<td title='Testcases.Google_18_VerifyLabelTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_18_VerifyLabelTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_18_VerifyLabelTest@13eb8acf</td></tr>
+<tr>
+<td title='Testcases.Google_04_YoutubeVerifyTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_04_YoutubeVerifyTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_04_YoutubeVerifyTest@51c8530f</td></tr>
+<tr>
+<td title='Testcases.Google_04_YoutubeVerifyTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_04_YoutubeVerifyTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_04_YoutubeVerifyTest@51c8530f</td></tr>
+<tr>
+<td title='Testcases.Google_13_GmailComposeVerifyTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_13_GmailComposeVerifyTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_13_GmailComposeVerifyTest@7403c468</td></tr>
+<tr>
+<td title='Testcases.Google_13_GmailComposeVerifyTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_13_GmailComposeVerifyTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_13_GmailComposeVerifyTest@7403c468</td></tr>
+<tr>
+<td title='Testcases.Google_03_DriveTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_03_DriveTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_03_DriveTest@43738a82</td></tr>
+<tr>
+<td title='Testcases.Google_03_DriveTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_03_DriveTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_03_DriveTest@43738a82</td></tr>
+<tr>
+<td title='Testcases.Google_03_DriveTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_03_DriveTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_03_DriveTest@43738a82</td></tr>
+<tr>
+<td title='Testcases.Google_17_GoogleSettingVerifyTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_17_GoogleSettingVerifyTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_17_GoogleSettingVerifyTest@c81cdd1</td></tr>
+<tr>
+<td title='Testcases.Google_17_GoogleSettingVerifyTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_17_GoogleSettingVerifyTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_17_GoogleSettingVerifyTest@c81cdd1</td></tr>
+<tr>
+<td title='Testcases.Google_01_PageTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_01_PageTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_01_PageTest@1fc2b765</td></tr>
+<tr>
+<td title='Testcases.Google_01_PageTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_01_PageTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_01_PageTest@1fc2b765</td></tr>
+<tr>
+<td title='Testcases.Google_01_PageTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_01_PageTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_01_PageTest@1fc2b765</td></tr>
+<tr>
+<td title='Testcases.Google_03_GmailTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_03_GmailTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_03_GmailTest@75881071</td></tr>
+<tr>
+<td title='Testcases.Google_03_GmailTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_03_GmailTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_03_GmailTest@75881071</td></tr>
+<tr>
+<td title='Testcases.Google_04_NewsVerifyTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_04_NewsVerifyTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_04_NewsVerifyTest@2a70a3d8</td></tr>
+<tr>
+<td title='Testcases.Google_04_NewsVerifyTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_04_NewsVerifyTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_04_NewsVerifyTest@2a70a3d8</td></tr>
+<tr>
+<td title='Testcases.Google_11_GmailStarTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_11_GmailStarTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_11_GmailStarTest@289d1c02</td></tr>
+<tr>
+<td title='Testcases.Google_11_GmailStarTest.closeBrowser()'><b>closeBrowser</b><br>Test class: Testcases.Google_11_GmailStarTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_11_GmailStarTest@289d1c02</td></tr>
+<tr>
+<td title='Testcases.Google_03_YoutubeTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_03_YoutubeTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_03_YoutubeTest@22eeefeb</td></tr>
+<tr>
+<td title='Testcases.Google_03_YoutubeTest.tearDown()'><b>tearDown</b><br>Test class: Testcases.Google_03_YoutubeTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_03_YoutubeTest@22eeefeb</td></tr>
+<tr>
+<td title='Testcases.Google_05_HindiTest.closebrowse()'><b>closebrowse</b><br>Test class: Testcases.Google_05_HindiTest</td>
+<td></td>
+<td>-1584458659</td>
+<td>Testcases.Google_05_HindiTest@17d0685f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.bookmarksproductTest()'><b>bookmarksproductTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_04_TranslateVerifyTest.checkAccountisValidorNot()'><b>checkAccountisValidorNot</b><br>Test class: Testcases.Google_04_TranslateVerifyTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_04_TranslateVerifyTest@4671e53b</td></tr>
+<tr>
+<td title='Testcases.Google_04_TranslateVerifyTest.checkAccountisValidorNot()'><b>checkAccountisValidorNot</b><br>Test class: Testcases.Google_04_TranslateVerifyTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_04_TranslateVerifyTest@4671e53b</td></tr>
+<tr>
+<td title='Testcases.Google_04_MapVerifyTest.checkAccountisValidorNot()'><b>checkAccountisValidorNot</b><br>Test class: Testcases.Google_04_MapVerifyTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_04_MapVerifyTest@b7dd107</td></tr>
+<tr>
+<td title='Testcases.Google_04_MapVerifyTest.checkAccountisValidorNot()'><b>checkAccountisValidorNot</b><br>Test class: Testcases.Google_04_MapVerifyTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_04_MapVerifyTest@b7dd107</td></tr>
+<tr>
+<td title='Testcases.Google_04_AccountVerifyTest.checkAccountisValidorNot()'><b>checkAccountisValidorNot</b><br>Test class: Testcases.Google_04_AccountVerifyTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_04_AccountVerifyTest@7cbd213e</td></tr>
+<tr>
+<td title='Testcases.Google_04_AccountVerifyTest.checkAccountisValidorNot()'><b>checkAccountisValidorNot</b><br>Test class: Testcases.Google_04_AccountVerifyTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_04_AccountVerifyTest@7cbd213e</td></tr>
+<tr>
+<td title='Testcases.Google_04_PlaystoreVerifyTest.checkAccountisValidorNot()'><b>checkAccountisValidorNot</b><br>Test class: Testcases.Google_04_PlaystoreVerifyTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_04_PlaystoreVerifyTest@33723e30</td></tr>
+<tr>
+<td title='Testcases.Google_04_PlaystoreVerifyTest.checkAccountisValidorNot()'><b>checkAccountisValidorNot</b><br>Test class: Testcases.Google_04_PlaystoreVerifyTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_04_PlaystoreVerifyTest@33723e30</td></tr>
+<tr>
+<td title='Testcases.Google_04_SearchVerifyTest.checkAccountisValidorNot()'><b>checkAccountisValidorNot</b><br>Test class: Testcases.Google_04_SearchVerifyTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_04_SearchVerifyTest@28ac3dc3</td></tr>
+<tr>
+<td title='Testcases.Google_04_SearchVerifyTest.checkAccountisValidorNot()'><b>checkAccountisValidorNot</b><br>Test class: Testcases.Google_04_SearchVerifyTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_04_SearchVerifyTest@28ac3dc3</td></tr>
+<tr>
+<td title='Testcases.Google_04_PhotosVerifyTest.checkAccountisValidorNot()'><b>checkAccountisValidorNot</b><br>Test class: Testcases.Google_04_PhotosVerifyTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_04_PhotosVerifyTest@1d371b2d</td></tr>
+<tr>
+<td title='Testcases.Google_04_PhotosVerifyTest.checkAccountisValidorNot()'><b>checkAccountisValidorNot</b><br>Test class: Testcases.Google_04_PhotosVerifyTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_04_PhotosVerifyTest@1d371b2d</td></tr>
+<tr>
+<td title='Testcases.Google_04_YoutubeVerifyTest.checkAccountisValidorNot()'><b>checkAccountisValidorNot</b><br>Test class: Testcases.Google_04_YoutubeVerifyTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_04_YoutubeVerifyTest@51c8530f</td></tr>
+<tr>
+<td title='Testcases.Google_04_YoutubeVerifyTest.checkAccountisValidorNot()'><b>checkAccountisValidorNot</b><br>Test class: Testcases.Google_04_YoutubeVerifyTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_04_YoutubeVerifyTest@51c8530f</td></tr>
+<tr>
+<td title='Testcases.Google_04_NewsVerifyTest.checkAccountisValidorNot()'><b>checkAccountisValidorNot</b><br>Test class: Testcases.Google_04_NewsVerifyTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_04_NewsVerifyTest@2a70a3d8</td></tr>
+<tr>
+<td title='Testcases.Google_04_NewsVerifyTest.checkAccountisValidorNot()'><b>checkAccountisValidorNot</b><br>Test class: Testcases.Google_04_NewsVerifyTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_04_NewsVerifyTest@2a70a3d8</td></tr>
+<tr>
+<td title='Testcases.Google_04_DriveVerifyTest.checkDriveisValidorNot()'><b>checkDriveisValidorNot</b><br>Test class: Testcases.Google_04_DriveVerifyTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_04_DriveVerifyTest@23fe1d71</td></tr>
+<tr>
+<td title='Testcases.Google_04_DriveVerifyTest.checkDriveisValidorNot()'><b>checkDriveisValidorNot</b><br>Test class: Testcases.Google_04_DriveVerifyTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_04_DriveVerifyTest@23fe1d71</td></tr>
+<tr>
+<td title='Testcases.Google_14_GmailsendmailTest.checkEmailsendornot()'><b>checkEmailsendornot</b><br>Test class: Testcases.Google_14_GmailsendmailTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_14_GmailsendmailTest@543c6f6d</td></tr>
+<tr>
+<td title='Testcases.Google_14_GmailsendmailTest.checkEmailsendornot()'><b>checkEmailsendornot</b><br>Test class: Testcases.Google_14_GmailsendmailTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_14_GmailsendmailTest@543c6f6d</td></tr>
+<tr>
+<td title='Testcases.Google_04_GmailVerifyTest.checkGmailisValidorNot()'><b>checkGmailisValidorNot</b><br>Test class: Testcases.Google_04_GmailVerifyTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_04_GmailVerifyTest@43bd930a</td></tr>
+<tr>
+<td title='Testcases.Google_04_GmailVerifyTest.checkGmailisValidorNot()'><b>checkGmailisValidorNot</b><br>Test class: Testcases.Google_04_GmailVerifyTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_04_GmailVerifyTest@43bd930a</td></tr>
+<tr>
+<td title='Testcases.Google_05_HindiTest.checkGooglePageinHindiLanguage()'><b>checkGooglePageinHindiLanguage</b><br>Test class: Testcases.Google_05_HindiTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_05_HindiTest@17d0685f</td></tr>
+<tr>
+<td title='Testcases.Google_07_VerifySearchTest.checkGoogleSearchPage1()'><b>checkGoogleSearchPage1</b><br>Test class: Testcases.Google_07_VerifySearchTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_07_VerifySearchTest@192d3247</td></tr>
+<tr>
+<td title='Testcases.Google_12_ReadEmailTest.checkReademails()'><b>checkReademails</b><br>Test class: Testcases.Google_12_ReadEmailTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_12_ReadEmailTest@6950e31</td></tr>
+<tr>
+<td title='Testcases.Google_12_ReadEmailTest.checkReademails()'><b>checkReademails</b><br>Test class: Testcases.Google_12_ReadEmailTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_12_ReadEmailTest@6950e31</td></tr>
+<tr>
+<td title='Testcases.Google_17_GoogleSettingVerifyTest.checkSettingpageTest()'><b>checkSettingpageTest</b><br>Test class: Testcases.Google_17_GoogleSettingVerifyTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_17_GoogleSettingVerifyTest@c81cdd1</td></tr>
+<tr>
+<td title='Testcases.Google_17_GoogleSettingVerifyTest.checkSettingpageTest()'><b>checkSettingpageTest</b><br>Test class: Testcases.Google_17_GoogleSettingVerifyTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_17_GoogleSettingVerifyTest@c81cdd1</td></tr>
+<tr>
+<td title='Testcases.Google_09_GmailAccountVerifyTest.checkgmail()'><b>checkgmail</b><br>Test class: Testcases.Google_09_GmailAccountVerifyTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_09_GmailAccountVerifyTest@52f759d7</td></tr>
+<tr>
+<td title='Testcases.Google_10Test.checkgmail()'><b>checkgmail</b><br>Test class: Testcases.Google_10Test</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_10Test@32eebfca</td></tr>
+<tr>
+<td title='Testcases.Google_10Test.checkgmail()'><b>checkgmail</b><br>Test class: Testcases.Google_10Test</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_10Test@32eebfca</td></tr>
+<tr>
+<td title='Testcases.Google_19_GmailMovePageTest.checklabel()'><b>checklabel</b><br>Test class: Testcases.Google_19_GmailMovePageTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_19_GmailMovePageTest@3ecd23d9</td></tr>
+<tr>
+<td title='Testcases.Google_19_GmailMovePageTest.checklabel()'><b>checklabel</b><br>Test class: Testcases.Google_19_GmailMovePageTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_19_GmailMovePageTest@3ecd23d9</td></tr>
+<tr>
+<td title='Testcases.Google_18_VerifyLabelTest.checklabel()'><b>checklabel</b><br>Test class: Testcases.Google_18_VerifyLabelTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_18_VerifyLabelTest@13eb8acf</td></tr>
+<tr>
+<td title='Testcases.Google_18_VerifyLabelTest.checklabel()'><b>checklabel</b><br>Test class: Testcases.Google_18_VerifyLabelTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_18_VerifyLabelTest@13eb8acf</td></tr>
+<tr>
+<td title='Testcases.Google_13_GmailComposeVerifyTest.gmailcomposeTest()'><b>gmailcomposeTest</b><br>Test class: Testcases.Google_13_GmailComposeVerifyTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_13_GmailComposeVerifyTest@7403c468</td></tr>
+<tr>
+<td title='Testcases.Google_13_GmailComposeVerifyTest.gmailcomposeTest()'><b>gmailcomposeTest</b><br>Test class: Testcases.Google_13_GmailComposeVerifyTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_13_GmailComposeVerifyTest@7403c468</td></tr>
+<tr>
+<td title='Testcases.Google_15_GmailSearchTest.gmailsearchboxTest()'><b>gmailsearchboxTest</b><br>Test class: Testcases.Google_15_GmailSearchTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_15_GmailSearchTest@5891e32e</td></tr>
+<tr>
+<td title='Testcases.Google_15_GmailSearchTest.gmailsearchboxTest()'><b>gmailsearchboxTest</b><br>Test class: Testcases.Google_15_GmailSearchTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_15_GmailSearchTest@5891e32e</td></tr>
+<tr>
+<td title='Testcases.Google_20_GmailSignOutTest.gmailsignoutTest()'><b>gmailsignoutTest</b><br>Test class: Testcases.Google_20_GmailSignOutTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_20_GmailSignOutTest@cb0ed20</td></tr>
+<tr>
+<td title='Testcases.Google_20_GmailSignOutTest.gmailsignoutTest()'><b>gmailsignoutTest</b><br>Test class: Testcases.Google_20_GmailSignOutTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_20_GmailSignOutTest@cb0ed20</td></tr>
+<tr>
+<td title='Testcases.Google_11_GmailStarTest.gmailstarTest()'><b>gmailstarTest</b><br>Test class: Testcases.Google_11_GmailStarTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_11_GmailStarTest@289d1c02</td></tr>
+<tr>
+<td title='Testcases.Google_11_GmailStarTest.gmailstarTest()'><b>gmailstarTest</b><br>Test class: Testcases.Google_11_GmailStarTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_11_GmailStarTest@289d1c02</td></tr>
+<tr>
+<td title='Testcases.Google_06_Test.googleTest()'><b>googleTest</b><br>Test class: Testcases.Google_06_Test</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_06_Test@8e24743</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googleadmobTest()'><b>googleadmobTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googleadsenseTest()'><b>googleadsenseTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googleadwordsTest()'><b>googleadwordsTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googleappsforworksTest()'><b>googleappsforworksTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googlebloggersTest()'><b>googlebloggersTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googlebooksTest()'><b>googlebooksTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googlecalendarTest()'><b>googlecalendarTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googlecloudprintTest()'><b>googlecloudprintTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googledriveTest()'><b>googledriveTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googleearthTest()'><b>googleearthTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googleformsTest()'><b>googleformsTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googlegmailTest()'><b>googlegmailTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googlehangoutsTest()'><b>googlehangoutsTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googleimagesearchTest()'><b>googleimagesearchTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googlekeepsTest()'><b>googlekeepsTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googlemapsTest()'><b>googlemapsTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googlemapsformobileTest()'><b>googlemapsformobileTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googlemobileTest()'><b>googlemobileTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googlenewsTest()'><b>googlenewsTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googlepanoramioTest()'><b>googlepanoramioTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googlepicasaTest()'><b>googlepicasaTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googlesalesTest()'><b>googlesalesTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googlescholarTest()'><b>googlescholarTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googlesearchformobileTest()'><b>googlesearchformobileTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googlesheetsTest()'><b>googlesheetsTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googlestoreTest()'><b>googlestoreTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googletranslateTest()'><b>googletranslateTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googletrendsTest()'><b>googletrendsTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googlevideosearchTest()'><b>googlevideosearchTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.googleyoutubeTest()'><b>googleyoutubeTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_16_MailwithAttachmentTest.mailattachmentTest()'><b>mailattachmentTest</b><br>Test class: Testcases.Google_16_MailwithAttachmentTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_16_MailwithAttachmentTest@7a30d1e6</td></tr>
+<tr>
+<td title='Testcases.Google_16_MailwithAttachmentTest.mailattachmentTest()'><b>mailattachmentTest</b><br>Test class: Testcases.Google_16_MailwithAttachmentTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_16_MailwithAttachmentTest@7a30d1e6</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.verifyAccount()'><b>verifyAccount</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.verifyDrive()'><b>verifyDrive</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.verifyGmail()'><b>verifyGmail</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_03_GmailTest.verifyGmailGmaillogo()'><b>verifyGmailGmaillogo</b><br>Test class: Testcases.Google_03_GmailTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_03_GmailTest@75881071</td></tr>
+<tr>
+<td title='Testcases.Google_03_AccountPageTest.verifyGoogleAccount()'><b>verifyGoogleAccount</b><br>Test class: Testcases.Google_03_AccountPageTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_03_AccountPageTest@569cfc36</td></tr>
+<tr>
+<td title='Testcases.Google_03_DriveTest.verifyGoogleMeetdrive()'><b>verifyGoogleMeetdrive</b><br>Test class: Testcases.Google_03_DriveTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_03_DriveTest@43738a82</td></tr>
+<tr>
+<td title='Testcases.Google_03_DriveTest.verifyGoogleusingDrive()'><b>verifyGoogleusingDrive</b><br>Test class: Testcases.Google_03_DriveTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_03_DriveTest@43738a82</td></tr>
+<tr>
+<td title='Testcases.Google_03_DriveTest.verifyGooglgotoDrive()'><b>verifyGooglgotoDrive</b><br>Test class: Testcases.Google_03_DriveTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_03_DriveTest@43738a82</td></tr>
+<tr>
+<td title='Testcases.Google_03_MapsTest.verifyMAptool()'><b>verifyMAptool</b><br>Test class: Testcases.Google_03_MapsTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_03_MapsTest@4e718207</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.verifyMaps()'><b>verifyMaps</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_03_MapsTest.verifyMapsearchbox()'><b>verifyMapsearchbox</b><br>Test class: Testcases.Google_03_MapsTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_03_MapsTest@4e718207</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.verifyNews()'><b>verifyNews</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_03_NewsTest.verifyNewstopstoris()'><b>verifyNewstopstoris</b><br>Test class: Testcases.Google_03_NewsTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_03_NewsTest@2db7a79b</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.verifyPhotos()'><b>verifyPhotos</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.verifyPlay()'><b>verifyPlay</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_03_playTest.verifyPlaysearch()'><b>verifyPlaysearch</b><br>Test class: Testcases.Google_03_playTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_03_playTest@37374a5e</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.verifySearch()'><b>verifySearch</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_01_PageTest.verifySearchBox()'><b>verifySearchBox</b><br>Test class: Testcases.Google_01_PageTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_01_PageTest@1fc2b765</td></tr>
+<tr>
+<td title='Testcases.Google_01_PageTest.verifySearchbtn()'><b>verifySearchbtn</b><br>Test class: Testcases.Google_01_PageTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_01_PageTest@1fc2b765</td></tr>
+<tr>
+<td title='Testcases.Google_01_PageTest.verifySearchluckybtn()'><b>verifySearchluckybtn</b><br>Test class: Testcases.Google_01_PageTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_01_PageTest@1fc2b765</td></tr>
+<tr>
+<td title='Testcases.Google_03_NewsTest.verifyTitalNews()'><b>verifyTitalNews</b><br>Test class: Testcases.Google_03_NewsTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_03_NewsTest@2db7a79b</td></tr>
+<tr>
+<td title='Testcases.Google_03_photosTest.verifyTitalPhotos()'><b>verifyTitalPhotos</b><br>Test class: Testcases.Google_03_photosTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_03_photosTest@74a10858</td></tr>
+<tr>
+<td title='Testcases.Google_03_playTest.verifyTitalPlay()'><b>verifyTitalPlay</b><br>Test class: Testcases.Google_03_playTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_03_playTest@37374a5e</td></tr>
+<tr>
+<td title='Testcases.Google_03_YoutubeTest.verifyTitalYouTube()'><b>verifyTitalYouTube</b><br>Test class: Testcases.Google_03_YoutubeTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_03_YoutubeTest@22eeefeb</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.verifyTranslate()'><b>verifyTranslate</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_03_translateTest.verifyTranslatefun()'><b>verifyTranslatefun</b><br>Test class: Testcases.Google_03_translateTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_03_translateTest@42eca56e</td></tr>
+<tr>
+<td title='Testcases.Google_02_PageTest.verifyYouTube()'><b>verifyYouTube</b><br>Test class: Testcases.Google_02_PageTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_02_PageTest@553a3d88</td></tr>
+<tr>
+<td title='Testcases.Google_03_YoutubeTest.verifyYouTubesearchbox()'><b>verifyYouTubesearchbox</b><br>Test class: Testcases.Google_03_YoutubeTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_03_YoutubeTest@22eeefeb</td></tr>
+<tr>
+<td title='Testcases.Google_03_GmailTest.verifygmailCreatGmail()'><b>verifygmailCreatGmail</b><br>Test class: Testcases.Google_03_GmailTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_03_GmailTest@75881071</td></tr>
+<tr>
+<td title='Testcases.Google_03_photosTest.verifygotoPhotos()'><b>verifygotoPhotos</b><br>Test class: Testcases.Google_03_photosTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_03_photosTest@74a10858</td></tr>
+<tr>
+<td title='Testcases.Google_03_SearchTest.verifysearchboxsearch()'><b>verifysearchboxsearch</b><br>Test class: Testcases.Google_03_SearchTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_03_SearchTest@8646db9</td></tr>
+<tr>
+<td title='Testcases.Google_03_SearchTest.verifysearchboxsearchbtn()'><b>verifysearchboxsearchbtn</b><br>Test class: Testcases.Google_03_SearchTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_03_SearchTest@8646db9</td></tr>
+<tr>
+<td title='Testcases.Google_03_SearchTest.verifysearchboxsearchlucky()'><b>verifysearchboxsearchlucky</b><br>Test class: Testcases.Google_03_SearchTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_03_SearchTest@8646db9</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.webchromeproductTest()'><b>webchromeproductTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+<tr>
+<td title='Testcases.Google_08_ProductWebTest.websearchproductTest()'><b>websearchproductTest</b><br>Test class: Testcases.Google_08_ProductWebTest</td>
+<td></td>
+<td>0</td>
+<td>Testcases.Google_08_ProductWebTest@64f6106c</td></tr>
+</table><p>
+</body>
+</html>
